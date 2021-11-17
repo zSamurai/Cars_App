@@ -60,7 +60,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(25, 30, 25, 0),
+              padding: const EdgeInsets.fromLTRB(25, 25, 25, 0),
               child: Material(
                 elevation: 10,
                 shadowColor: Colors.grey,
@@ -84,7 +84,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(25, 30, 25, 0),
+              padding: const EdgeInsets.fromLTRB(25, 25, 25, 0),
               child: Material(
                 elevation: 10,
                 shadowColor: Colors.grey,
@@ -108,7 +108,31 @@ class _AddCarScreenState extends State<AddCarScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(25, 30, 25, 0),
+              padding: const EdgeInsets.fromLTRB(25, 25, 25, 0),
+              child: Material(
+                elevation: 10,
+                shadowColor: Colors.grey,
+                child: TextFormField(
+                    controller: carModel,
+                    decoration: InputDecoration(
+                      hintText: "Please enter Model",
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(5.0),
+                          borderSide:
+                          const BorderSide(color: Colors.grey, width: 2.0)),
+                      focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(5.0)),
+                    ),
+                    validator: (String? value) {
+                      if (value!.isNotEmpty) {
+                      } else {
+                        return "Please fill the field";
+                      }
+                    }),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(25, 25, 25, 0),
               child: Material(
                 elevation: 10,
                 shadowColor: Colors.grey,
@@ -132,7 +156,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(25, 30, 25, 0),
+              padding: const EdgeInsets.fromLTRB(25, 25, 25, 0),
               child: Material(
                 elevation: 10,
                 shadowColor: Colors.grey,
@@ -156,7 +180,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.all(50),
+              padding: EdgeInsets.all(35),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
